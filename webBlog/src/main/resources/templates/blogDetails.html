@@ -15,7 +15,7 @@
         <h1 th:text="${el.title}"></h1>
         <p th:text="${el.full_text}"></p>
         <p> <b>views:</b> <span th:text="${el.views}"/></p>
-        <a th:href="'/blog/'+${el.id}+'/edit'" class="btn btn-warning">Редактировать</a>
+       <p> <a th:href="'/blog/'+${el.id}+'/edit'" class="btn btn-warning">Редактировать</a> </p>
         <form th:action="'/blog/'+ ${el.id}+'/delete'" method="post">
             <button class="btn btn-warning" type="submit">Удалить</button>
         </form>
